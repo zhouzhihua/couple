@@ -6,10 +6,15 @@
   <meta charset="utf-8">
   <title>用户协议</title>
   <style>
-    ol li ol li:before {
+            ol li ol {
+                list-style-type: none;
+                counter-reset: level2;
+            }
+            ol li ol li:before {
                 content: "（" counter(level2) "）";
                 counter-increment: level2;
             }
+            
   </style>
 </head>
 
